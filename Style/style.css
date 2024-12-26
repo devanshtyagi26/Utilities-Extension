@@ -92,6 +92,13 @@ body {
   background-size: 55px 55px;
 }
 
+.linear {
+  grid-template-areas:
+    "a"
+    "a"
+    "a";
+}
+
 .button {
   --black-700: #1f1f1f;
   --border_radius: 0.5625rem;
@@ -277,4 +284,25 @@ body {
 
   font-size: 1rem;
   color: transparent;
+}
+
+.back {
+  width: 1.5rem;
+  height: 1.5rem;
+  flex-shrink: 0;
+  border-radius: 15px;
+  border: 0.5px solid rgba(0, 0, 0, 0);
+  background: #1f1f1f;
+  box-shadow: 5px 5px 13px 0px #000;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.back svg {
+  width: 20px;
+  height: 20px;
 }
