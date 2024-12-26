@@ -8,9 +8,51 @@
 body {
   width: 208px;
   height: 248px;
-  background-color: red;
+  overflow: hidden;
 }
-.container {
+.intro {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  max-width: 100vw;
+  z-index: 2;
+}
+
+.intro .introPlate {
+  width: 8.125rem;
+  height: 3.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5625rem;
+  border: 0.5px solid rgba(0, 0, 0, 0);
+  background: #1f1f1f;
+  box-shadow: 5px 5px 13px 0px #000;
+  color: #c3c3c3;
+  font-family: "Jersey 10";
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.fadeIn {
+  animation: fade 5s cubic-bezier(0.8, -0.09, 0.46, 0.92) 0.1s 1 forwards;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+    z-index: 2;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+.container,
+.intro {
   display: grid;
   grid-template-areas:
     "a a"
@@ -18,7 +60,7 @@ body {
     "a a";
   align-items: center;
   justify-content: space-around;
-  padding: 1rem;
+  /* padding: 1rem; */
   width: 100%;
   height: 100%;
   --color: rgba(114, 114, 114, 0.3);
@@ -235,17 +277,4 @@ body {
 
   font-size: 1rem;
   color: transparent;
-}
-
-.credits {
-  color: #fff;
-  font-size: 0.3125rem;
-  line-height: normal;
-  font-family: "Jersey 10", serif;
-  font-weight: 400;
-  font-style: normal;
-  display: flex;
-  position: absolute;
-  bottom: -23px;
-  right: -27px;
 }
