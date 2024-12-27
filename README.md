@@ -52,4 +52,4 @@ Contributions are welcome! Feel free to fork this repository, submit issues, or 
 Feel free to reach out for any suggestions or improvements:
 
 - LinkedIn: [Devansh Tyagi](https://linkedin.com/in/tyagi-devansh)
-- GitHub: [@your-username](https://github.com/devanshtyagi26)
+- GitHub: [@devanshtyagi26](https://github.com/devanshtyagi26)
